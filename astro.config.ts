@@ -17,6 +17,7 @@ export default defineConfig({
 		},
 	},
 	site: "https://kolvin.github.io",
+	base: "/blog",
 	integrations: [
 		mdx({}),
 		tailwind({
