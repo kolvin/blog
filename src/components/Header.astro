@@ -25,7 +25,7 @@ const url = new URL(Astro.request.url);
 <header>
 	<span>
 		<a
-			href="/"
+			href="/blog/"
 			class="logo"
 			aria-current={url.pathname === "/" ? "page" : false}
 		>
@@ -33,11 +33,17 @@ const url = new URL(Astro.request.url);
 			<span>Kolv.in</span>
 		</a>
 		<nav id="navigation-menu" aria-label="Main">
-			<a href="/" aria-current={url.pathname === "/" ? "page" : false}>Home</a>
-			<a href="/about" aria-current={url.pathname === "/about" ? "page" : false}
+			<a href="/blog/" aria-current={url.pathname === "/" ? "page" : false}
+				>Home
+			</a>
+			<a
+				href="/blog/about"
+				aria-current={url.pathname === "/about" ? "page" : false}
 				>About
 			</a>
-			<a href="/posts" aria-current={url.pathname === "/posts" ? "page" : false}
+			<a
+				href="/blog/posts"
+				aria-current={url.pathname === "/posts" ? "page" : false}
 				>Posts
 			</a>
 		</nav>
