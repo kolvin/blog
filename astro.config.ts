@@ -5,13 +5,18 @@ import image from "@astrojs/image";
 import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
+	vite: {
+    ssr: {
+      external: ["svgo"],
+    },
+  },
 	markdown: {
 		shikiConfig: {
 			theme: "dracula",
 			wrap: true,
 		},
 	},
-	site: "https://www.astro-theme-cactus.netlify.app",
+	site: "https://kolv.in",
 	integrations: [
 		mdx({}),
 		tailwind({

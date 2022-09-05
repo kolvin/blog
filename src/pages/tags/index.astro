@@ -7,7 +7,7 @@ const allPosts = await Astro.glob<Post>("../posts/*.mdx");
 const allTags = getAllTagsWithCount(allPosts);
 
 const meta = {
-	title: "All Tags",
+	title: "~/tags",
 	description: "All Tags from my blogs",
 };
 ---

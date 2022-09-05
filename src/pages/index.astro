@@ -1,12 +1,10 @@
 ---
 import PageLayout from "@/layouts/Base";
 import BlogPostPreview from "@/components/BlogPostPreview";
-import SocialList from "@/components/SocialList";
 import { sortMDByDate } from "@/util";
 import type { Post } from "@/types";
-
 const meta = {
-	title: "Astro Cactus",
+	title: "~/",
 	description: "The perfect starter for your perfect blog.",
 };
 
@@ -16,17 +14,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 ---
 
 <PageLayout meta={meta}>
-	<section>
-		<h1 class="mb-6 title">Hello World!</h1>
-		<p class="mb-4">
-			Hi, I’m a theme for Astro, an example of how you can use this starter to
-			create a personal blog. If you want to know more about how you can
-			customise me, add more posts, and make it your own, click on one of the
-			social links which will take you to my repo.
-		</p>
-		<SocialList />
-	</section>
-	<section aria-label="Blog post list" class="mt-16">
+	<section aria-label="Blog post list">
 		<h2 class="mb-4 text-xl title">Posts</h2>
 		<ul class="space-y-4 sm:space-y-2">
 			{
@@ -40,51 +28,122 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 	</section>
 	<section class="mt-16">
 		<h2 class="mb-4 text-xl title">Technologies</h2>
-		<ul class="space-y-4 sm:space-y-2">
-			<li>
+
+		<div class="flex max-w-lg flex-wrap">
+			<div class="mt-2 mb-2 mr-5">
 				<a
-					href="https://astro.build"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="inline-block cactus-link"
-					>Astro
-				</a>:
-				<p class="inline-block sm:mt-2">Build fast websites, faster.</p>
-			</li>
-			<li>
+					class="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 cactus-link"
+					href="https://aws.amazon.com/"
+					>AWS
+				</a>
+			</div>
+			<div class="mt-2 mb-2 mr-5">
 				<a
-					href="https://docs.astro.build/en/guides/integrations-guide/image/"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="inline-block cactus-link"
-					>@astro/image
-				</a>:
-				<p class="inline-block sm:mt-2">
-					An Astro integration for optimising images in Astro projects.
-				</p>
-			</li>
-			<li>
+					class="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 cactus-link"
+					href="https://www.terraform.io/"
+					>Terraform
+				</a>
+			</div>
+			<div class="mt-2 mb-2 mr-5">
 				<a
-					href="https://tailwindcss.com"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="inline-block cactus-link"
-					>Tailwind CSS
-				</a>:
-				<p class="inline-block sm:mt-2">
-					Rapidly build modern websites without ever leaving your HTML.
-				</p>
-			</li>
-			<li>
+					class="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 cactus-link"
+					href="https://terragrunt.gruntwork.io/"
+					>terragrunt
+				</a>
+			</div>
+			<div class="mt-2 mb-2 mr-5">
 				<a
-					href="https://mdxjs.com/"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="inline-block cactus-link"
-					>MDX
-				</a>:
-				<p class="inline-block sm:mt-2">Markdown for the component era.</p>
-			</li>
-		</ul>
+					class="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 cactus-link"
+					href="https://docker.io"
+					>Docker
+				</a>
+			</div>
+		</div>
+
+		<div class="flex max-w-lg flex-wrap">
+			<div class="mt-2 mb-2 mr-5">
+				<a
+					class="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 cactus-link"
+					href="https://symfony.com/"
+					>Symfony
+				</a>
+			</div>
+			<div class="mt-2 mb-2 mr-5">
+				<a
+					class="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 cactus-link"
+					href="https://symfony.com/"
+					>Node
+				</a>
+			</div>
+		</div>
+
+		<div class="flex max-w-lg flex-wrap">
+			<div class="mt-2 mb-2 mr-5">
+				<a
+					class="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 cactus-link"
+					href="https://docs.gitlab.com/ee/ci/"
+					>Gitlab CI/CD
+				</a>
+			</div>
+			<div class="mt-2 mb-2 mr-5">
+				<a
+					class="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 cactus-link"
+					href="https://github.com/features/actions"
+					>Github Actions
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="mt-16">
+		<h2 class="mb-4 text-xl title">Interests</h2>
+
+		<div class="flex max-w-lg flex-wrap">
+			<div class="mt-2 mb-2 mr-5">
+				<a
+					class="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 cactus-link"
+					href="https://webb.nasa.gov/"
+					>James Webb Telescope
+				</a>
+			</div>
+			<div class="mt-2 mb-2 mr-5">
+				<a
+					class="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 cactus-link"
+					href="https://www.reddit.com/r/watercooling/comments/d6y5l1/at_least_my_components_are_cool_right/"
+					>Custom PC building
+				</a>
+			</div>
+			<div class="mt-2 mb-2 mr-5">
+				<a
+					class="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 cactus-link"
+					href="https://www.raspberrypi.com/for-home/"
+					>Rasberry Pis
+				</a>
+			</div>
+			<div class="mt-2 mb-2 mr-5">
+				<a
+					class="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 cactus-link"
+					href="https://www.reddit.com/r/watercooling/comments/d6y5l1/at_least_my_components_are_cool_right/"
+					>My Guitars
+				</a>
+			</div>
+			<div class="mt-2 mb-2 mr-5">
+				<a
+					class="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 cactus-link"
+					href="https://open.spotify.com/user/1119093459?si=76eb3af830f743b7"
+					>Music
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="mt-16">
+		<h2 class="mb-4 text-xl title">Disinterests</h2>
+
+		<div class="flex max-w-lg flex-wrap">
+			<div class="mt-2 mb-2 mr-5">
+				<p>You</p>
+			</div>
+		</div>
 	</section>
 </PageLayout>

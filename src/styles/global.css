@@ -1,22 +1,22 @@
 @tailwind base;
 @layer base {
-	:root {
+  :root {
 		color-scheme: light;
 		--theme-bg: 0 0% 98%;
 		--theme-link: 172 18.1% 41.2%;
 		--theme-text: 202 10.5% 14.9%;
-		--theme-accent: 351 65.9% 48.2%;
+		--theme-accent: 180 65.9% 48.2%;
 		--theme-accent-2: 0 0% 6.7%;
 		--theme-quote: 351 65.9% 48.2%;
 		--theme-menu-bg: hsl(0 0% 98% / 0.85);
-	}
+	} 
 
 	:root.dark {
 		color-scheme: dark;
 		--theme-bg: 210 6.5% 12.2%;
 		--theme-link: 330 49.4% 66.7%;
 		--theme-text: 220 2.9% 79.4%;
-		--theme-accent: 159 62.8% 45.3%;
+		--theme-accent: 284 62.8% 45.3%;
 		--theme-accent-2: 0 0% 93.3%;
 		--theme-quote: 102 100% 85.7%;
 		--theme-menu-bg: hsl(210 6.5% 12.2% / 0.85);
