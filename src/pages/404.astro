@@ -4,14 +4,15 @@ import { Image } from "@astrojs/image/components";
 import milo from "../assets/images/milo/not-impressed-milo.jpg";
 
 const meta = {
-	title: "Oops! You found a missing page!",
-	description: "Oops! It looks like this page is lost in space!",
+	title: "Oops!",
+	description:
+		"It looks like this page does not exist, kinda like it was sucked into a black hole...",
 };
 ---
 
 <PageLayout meta={meta}>
-	<h1 class="mb-6 title">404 | Oops something went wrong</h1>
-	<p class="mb-8">Please use the navigation to find your way back</p>
+	<h1 class="mb-6 title">404 | Page not found</h1>
+	<p class="mb-8">You have not impressed Milo</p>
 	<div class="grid justify-center my-4">
 		<Image src={milo} alt="An inimpressed Milo" />
 	</div>
