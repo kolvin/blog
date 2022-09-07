@@ -7,7 +7,7 @@ on:
 
 jobs:
   release:
-    uses: kolvin/workflows/.github/workflows/automated-semver.yaml@31be6c5d5ee5da0bd16b61dac25f11194170e328
+    uses: kolvin/workflows/.github/workflows/automated-semver.yaml@v1.5.0
     secrets:
       BOT_GPG_PRIVATE_KEY: ${{ secrets.BOT_GPG_PRIVATE_KEY }}
       BOT_GPG_PASSPHRASE: ${{ secrets.BOT_GPG_PASSPHRASE }}
