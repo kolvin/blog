@@ -1,9 +1,8 @@
 const siteMeta = {
   title: "Kolv.in",
-  description: "",
+  description: "Personal site of an average engineer. I hate computers",
   lang: "en-GB",
   ogLocale: "en_GB",
-  githubUrl: "https://github.com/kolvin/blog",
   themeColorLight: "#fafafa",
   themeColorDark: "#1d1f21",
 }

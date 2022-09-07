@@ -16,8 +16,7 @@ export default defineConfig({
 			wrap: true,
 		},
 	},
-	site: "https://kolvin.github.io",
-	base: "/blog",
+	site: "https://kolv.in",
 	integrations: [
 		mdx({}),
 		tailwind({
