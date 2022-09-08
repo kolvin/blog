@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/kolvin/blog/compare/v1.0.1...v1.1.0) (2022-09-08)
+
+
+### Features
+
+* **post:** created post on guitars ([c383bfe](https://github.com/kolvin/blog/commit/c383bfeff75f0907a4078409e24438f2b383132f))
+
 ## [1.0.1](https://github.com/kolvin/blog/compare/v1.0.0...v1.0.1) (2022-09-08)
 
 
