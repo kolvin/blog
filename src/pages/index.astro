@@ -3,6 +3,7 @@ import PageLayout from "@/layouts/Base";
 import BlogPostPreview from "@/components/BlogPostPreview";
 import { sortMDByDate } from "@/util";
 import type { Post } from "@/types";
+
 const meta = {
 	title: "Home",
 	description: "Personal site of an average engineer. I hate computers",
@@ -71,7 +72,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 			<div class="mt-2 mb-2 mr-5">
 				<a
 					class="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 cactus-link"
-					href="https://symfony.com/"
+					href="https://nodejs.org/en/"
 					>Node
 				</a>
 			</div>
@@ -123,7 +124,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 			<div class="mt-2 mb-2 mr-5">
 				<a
 					class="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 cactus-link"
-					href="https://www.reddit.com/r/watercooling/comments/d6y5l1/at_least_my_components_are_cool_right/"
+					href="/posts/hello-djentlemen"
 					>My Guitars
 				</a>
 			</div>
