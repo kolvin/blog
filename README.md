@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Contents
+
+- [Blog](#blog)
+- [Check it oot](#check-it-oot)
+          - [Theme was adapted from this template](#theme-was-adapted-from-this-template)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Blog
 
 A repo for my personal blog build using [Astro](https://astro.build/)+[Tailwind](https://tailwindcss.com/)
@@ -10,3 +20,5 @@ ___
 # Check it oot
 
 [kolv.in](https://kolv.in) - [Analytics](https://plausible.io/kolv.in)
+
+###### Theme was adapted from [this](https://github.com/chrismwilliams/astro-theme-cactus) template
