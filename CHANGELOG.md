@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/kolvin/blog/compare/v1.1.0...v1.1.1) (2022-09-08)
+
+
+### Bug Fixes
+
+* **seo:** update description content for new page ([323ef83](https://github.com/kolvin/blog/commit/323ef83be589eda0e33203cc06ff1a958f929592))
+
 # [1.1.0](https://github.com/kolvin/blog/compare/v1.0.1...v1.1.0) (2022-09-08)
 
 
