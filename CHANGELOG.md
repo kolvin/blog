@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/kolvin/blog/compare/v1.0.0...v1.0.1) (2022-09-08)
+
+
+### Bug Fixes
+
+* **nav:** resolve bad urls ([e838eb9](https://github.com/kolvin/blog/commit/e838eb97fe85838b9aea19cc114cc10d63968924))
+
 # 1.0.0 (2022-09-07)
 
 
