@@ -8,7 +8,7 @@ export type Props = SiteMeta;
 const {
 	title,
 	description = siteMeta.description,
-	imageUrl = siteMeta.imageUrl,
+	imageUrl,
 } = Astro.props as Props;
 
 const titleSeparator = "•";
