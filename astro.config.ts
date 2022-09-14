@@ -23,6 +23,6 @@ export default defineConfig({
 			config: { applyBaseStyles: false },
 		}),
 		image(),
-		sitemap(),
+		sitemap()
 	],
 });

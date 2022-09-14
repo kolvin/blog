@@ -38,7 +38,7 @@
   "scripts": {
     "build": "astro build",
     "dev": "astro dev",
-		"format": "prettier -w ./src ./src/**/*.astro",
+    "format": "prettier -w ./src ./src/**/*.astro",
     "preview": "astro preview",
     "start": "astro dev"
   },
