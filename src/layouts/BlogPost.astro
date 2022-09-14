@@ -5,7 +5,7 @@ import Paginator from "@/components/Paginator";
 import type { Post } from "@/types";
 
 const {
-	content: { title, description, publishDate, tags },
+	content: { title, description, publishDate, tags, imageUrl },
 	headings,
 } = Astro.props;
 const date = new Date(publishDate);
@@ -33,7 +33,7 @@ const paginationProps = {
 };
 ---
 
-<BaseLayout meta={{ title, description }}>
+<BaseLayout meta={{ title, description, imageUrl }}>
 	<div class="sm:grid sm:grid-cols-[3fr_1fr] sm:gap-x-10 sm:items-start">
 		<article>
 			<h1 class="title">{title}</h1>
