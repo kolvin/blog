@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/kolvin/blog/compare/v1.2.2...v1.2.3) (2022-09-14)
+
+
+### Bug Fixes
+
+* **seo:** set twiter image src ([f20e0f8](https://github.com/kolvin/blog/commit/f20e0f8e3bc43bb03ca3cf21fa49bfee042967a7))
+
 ## [1.2.2](https://github.com/kolvin/blog/compare/v1.2.1...v1.2.2) (2022-09-14)
 
 
