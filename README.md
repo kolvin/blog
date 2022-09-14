@@ -3,8 +3,8 @@
 ## Contents
 
 - [Blog](#blog)
-- [Check it oot](#check-it-oot)
-          - [Theme was adapted from this template](#theme-was-adapted-from-this-template)
+- [Links](#links)
+  - [Notes](#notes)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -17,8 +17,12 @@ A repo for my personal blog build using [Astro](https://astro.build/)+[Tailwind]
 [![Semantic Release - angular](https://img.shields.io/static/v1?label=Semantic+Release&message=angular&color=e10079&logo=semantic-release)](https://github.com/semantic-release/semantic-release) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ___
 
-# Check it oot
+# Links
 
-[kolv.in](https://kolv.in) - [Analytics](https://plausible.io/kolv.in)
+- [kolv.in](https://kolv.in)
+- [analytics](https://plausible.io/kolv.in)
 
-###### Theme was adapted from [this](https://github.com/chrismwilliams/astro-theme-cactus) template
+
+## Notes
+- Theme was adapted from [this](https://github.com/chrismwilliams/astro-theme-cactus) template
+- Running [automated releases](https://github.com/kolvin/workflows/blob/main/.github/workflows/automated-semver.yaml) because i can
