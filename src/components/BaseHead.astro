@@ -2,8 +2,6 @@
 import type { SiteMeta } from "@/types";
 import siteMeta from "src/site-meta.config";
 import "../styles/global.css";
-import { Image } from "@astrojs/image/components";
-
 
 export type Props = SiteMeta;
 
@@ -15,7 +13,6 @@ const {
 
 const titleSeparator = "•";
 const siteTitle = `${title} ${titleSeparator} ${siteMeta.title}`;
-const pageImage = <Image src=imageUrl alt=""/>
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
@@ -54,4 +51,4 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-{imageUrl && <meta property="twitter:image" content={} />}
+{imageUrl && <meta property="twitter:image" content={imageUrl} />}
