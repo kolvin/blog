@@ -8,7 +8,7 @@ export type Props = SiteMeta;
 const {
 	title,
 	description = siteMeta.description,
-	image,
+	imageUrl,
 } = Astro.props as Props;
 
 const titleSeparator = "•";
@@ -42,13 +42,13 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 <link rel="canonical" href={canonicalURL} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-{image && <meta property="og:image" content={image} />}
+{imageUrl && <meta property="og:image" content={imageUrl} />}
 
 <!-- Twitter -->
 <meta
 	property="twitter:card"
-	content={image ? "summary_large_image" : "summary"}
+	content={imageUrl ? "summary_large_image" : "summary"}
 />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-{image && <meta property="twitter:image" content={image} />}
+{imageUrl && <meta property="twitter:image" content={imageUrl} />}

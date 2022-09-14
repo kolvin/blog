@@ -9,7 +9,7 @@ interface IElement {
 type SiteMeta = {
 	title: string;
 	description?: string;
-	image?: any;
+	imageUrl?: string;
 };
 
 type PaginationLink = {
