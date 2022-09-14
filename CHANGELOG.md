@@ -1,3 +1,14 @@
+# [1.2.0](https://github.com/kolvin/blog/compare/v1.1.1...v1.2.0) (2022-09-14)
+
+
+### Features
+
+* **post:** import and create content for 2016 period [#14](https://github.com/kolvin/blog/issues/14) ([e7b7e34](https://github.com/kolvin/blog/commit/e7b7e349245373bf24e975f67ac12ff6d6c028e9))
+* **post:** import and create content for 2017 -> 2019 (scna-gate only) [#14](https://github.com/kolvin/blog/issues/14) ([850f51b](https://github.com/kolvin/blog/commit/850f51bb034ea2aaf1598c6aae71a3818ba92287))
+* **post:** import and create content for 2017 -> 2019 [#14](https://github.com/kolvin/blog/issues/14) ([38854e0](https://github.com/kolvin/blog/commit/38854e06ab70cccf667f4c87ffbde7d8a1e9ca4f))
+* **post:** import and create content for 2019 -> 2021 [#14](https://github.com/kolvin/blog/issues/14) ([9d4c53c](https://github.com/kolvin/blog/commit/9d4c53c855337e9c4323d8ef852d8e5351f4e5c0))
+* **post:** import and create content for 2021 -> 2022 [#14](https://github.com/kolvin/blog/issues/14) ([06eaf0b](https://github.com/kolvin/blog/commit/06eaf0b358d020ed2ef01132f33b52a550a905a4))
+
 ## [1.1.1](https://github.com/kolvin/blog/compare/v1.1.0...v1.1.1) (2022-09-08)
 
 
