@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/kolvin/blog/compare/v1.2.0...v1.2.1) (2022-09-14)
+
+
+### Bug Fixes
+
+* **post:** name post to match title ([87c622e](https://github.com/kolvin/blog/commit/87c622e415e4352242e1d39ebaafba08073edfc8))
+
 # [1.2.0](https://github.com/kolvin/blog/compare/v1.1.1...v1.2.0) (2022-09-14)
 
 
