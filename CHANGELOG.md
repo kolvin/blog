@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/kolvin/blog/compare/v1.2.1...v1.2.2) (2022-09-14)
+
+
+### Bug Fixes
+
+* **post:** remove duplicate post... ([3ac656e](https://github.com/kolvin/blog/commit/3ac656e957e810b5830fd7bc1e119903116bcc32))
+
 ## [1.2.1](https://github.com/kolvin/blog/compare/v1.2.0...v1.2.1) (2022-09-14)
 
 
