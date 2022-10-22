@@ -1,0 +1,147 @@
+---
+layout: "@/layouts/BlogPost"
+title: Shit Hot Dotfiles
+imageUrl: ""
+publishDate: 28 Sept 2022
+description: Dotfile managment using Chezmoi
+tags: ["technical", "configuration", "git", "cli"]
+---
+
+import { Image } from "@astrojs/image/components";
+import chezmoiInit from "@/assets/images/diagrams/chezmoi-init.jpg";
+import chezmoiEdit from "@/assets/images/diagrams/chezmoi-edit.jpg";
+import zshTheme from "@/assets/images/screenshots/zsh-example.jpg";
+
+## What are dotfiles
+
+You've probably seen them before, files like `.gitconfig` + `.ssh/config` + `.zshrc` are considered [dotfiles](https://www.atlassian.com/git/tutorials/dotfiles)
+
+They contain configuration for tooling running on your host which modifies how the tooling behaves
+
+---
+
+## What problem does this solve
+
+- Version control your machine config
+- Automated setup of your machine setup
+- Cross-platform support
+  - `Linux` + `MacosX` + `WSL`
+- Easy to switch between different dotfile repositories
+  - Test yer pals dotfiles so you can slag thier shit setup then revert back to your own
+
+[Chezmoi](https://www.chezmoi.io/) is a shit hot tool that enables all this and it really cool 10/10
+
+---
+
+## Prerequisites
+- Working knowlegde with git
+- Unix based CLI
+
+--- 
+
+## Getting Started
+
+The general idea is to store local tooling configuration into a git repo via chezmoi
+
+<Image src={chezmoiInit} alt="chezmoi setup flow"/>
+
+1. First, [Install Chezmoi](https://www.chezmoi.io/install/)
+2. [Create a git repo](https://github.com/new) called `dotfiles`
+3. Run `chezmoi init` to provision a local repo located at `~/.local/share/chezmoi`
+4. Run `chezmoi add  ~/.zshrc` to add your first host file to your new local repo
+5. Run `chezmoi cd` to head over to your local dotfile repo
+6. Configure local repo remote origin
+```shell
+git remote add origin git@github.com:<uname>/dotfiles.git 
+git branch -M main
+git add .
+git commit -m "feat(zsh): inital commit of .zshrc file"
+git push -u origin main
+```
+
+Congrats, you just commited your first dotfile 🎉
+
+---
+
+## Tracking Changes
+
+<Image src={chezmoiEdit} alt="chezmoi edit flow"/>
+
+1. `chezmoi edit ~/.zshrc`
+2. `chezmoi -v apply`
+3. `chezmoi cd`
+```shell
+git add .
+git commit -m "feat(zsh): updated .zshrc with alias"
+git push
+```
+
+Its the circle of life
+
+---
+
+## SSH keys
+
+> This topic has a dependancy on a [1Password account](https://1password.com/sign-up/)
+
+Coupling [Chezmoi](https://www.chezmoi.io/) with a password manager is another really powerfull feature that I love
+
+Instead of generating new SSH keys each time you move machine, you can store SSH keys into your password vault and configure your SSH agent to read your keys from the password vault
+
+Meaning you can clear out all your keys in `~/.ssh`
+
+See [here](https://blog.1password.com/1password-ssh-agent/) for how to configure
+
+---
+
+## Homebrew
+
+Personally I find homebrew pretty slow but its nice that you can install it on `Linux` + `MacosX` + `WSL`
+
+This provides us a constiant way to manage our dependencies and tooling, using 1 tool across 3 different operating systems
+
+Yum
+
+---
+
+## ZSH
+
+I run ZSH which is a Unix shell built ontop of bash, it has [many features](https://en.wikipedia.org/wiki/Z_shell#Features)
+
+I mainly use it for 
+- automatic cd
+- themes and plugin support via [oh-my-zsh](https://ohmyz.sh/) framework
+
+```shell
+# before
+cd ~/dev/kolvin/projects
+# after
+~/dev/kolvin/projects
+```
+
+<Image src={zshTheme} alt="my personal cli theme"/>
+
+Although [@electrocally](https://github.com/electrocally) is trying to pull me over to [fish](https://fishshell.com/) which i am interested in learning
+
+---
+
+## Vscode Settings
+
+Another cool benifit is tracking your [vscode settings.json](https://stackoverflow.com/a/65909052/3432245)
+
+As mentioned above, if you track changes to move to a new machine then youll noticed your configuration gets applied
+
+But with the caveat that the settings.json file location is different per different operating system, ive still to implment support for this in my own repo for both `Linx` + `WSL`
+
+Currely using `MacosX` the most
+
+But VScode also offers a native solution to this called [settings sync](https://code.visualstudio.com/docs/editor/settings-sync)
+
+---
+
+## Resources
+- [Chezmoi](https:://chezmoi.io)
+  - [Concepts](https://www.chezmoi.io/quick-start/#concepts)
+- [1P assword ssh-agent tutorial](https://blog.1password.com/1password-ssh-agent/)
+- [Atlassian dotfiles](https://www.atlassian.com/git/tutorials/dotfiles)
+- [My dotfiles](https://github.com/kolvin/dotfiles)
