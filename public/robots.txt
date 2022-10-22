@@ -1,3 +1,9 @@
+# Disallow everything.
 User-agent: *
-Disallow:
-Sitemap: https://www.astro-theme-cactus.netlify.app/sitemap-index.xml
+Disallow: /
+
+User-agent: Twitterbot
+Allow: /images
+
+User-agent: facebookexternalhit
+Allow: /images
