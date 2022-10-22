@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/kolvin/blog/compare/v1.2.3...v1.3.0) (2022-10-22)
+
+
+### Bug Fixes
+
+* **seo:** allow twitterbot + fb in robots.txt ([b7b6495](https://github.com/kolvin/blog/commit/b7b6495aa9d1d418641b269a46e02725af097db2))
+
+
+### Features
+
+* **post:** finished off dotfile post with some added image content ([002a3f7](https://github.com/kolvin/blog/commit/002a3f70eb902a5cb75f08b0cefcee026daf5ada))
+
 ## [1.2.3](https://github.com/kolvin/blog/compare/v1.2.2...v1.2.3) (2022-09-14)
 
 
