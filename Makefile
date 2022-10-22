@@ -8,3 +8,12 @@ install: ## Install pre-commit hooks
 uninstall: ## Uninstall hooks
 	@pre-commit uninstall
 
+build: ## Build src
+	@pnpm run build
+
+run: ## Run project
+	@pnpm dev
+
+ngrok-expose: ## Expose site publiclly via ngrok
+	@make -s build
+	@ngrok http 3000
