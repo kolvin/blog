@@ -6,14 +6,17 @@ import "../styles/global.css";
 export type Props = SiteMeta;
 
 const {
+	domain = siteMeta.domain,
 	title,
 	description = siteMeta.description,
-	imageUrl,
+	imageUrl = siteMeta.imageUrl,
+	twitterAuthor = siteMeta.twitterAuthor,
 } = Astro.props as Props;
 
 const titleSeparator = "•";
 const siteTitle = `${title} ${titleSeparator} ${siteMeta.title}`;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const seoImageURL = `${domain}${imageUrl}`;
 ---
 
 <meta charset="utf-8" />
@@ -42,13 +45,11 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 <link rel="canonical" href={canonicalURL} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-{imageUrl && <meta property="og:image" content={imageUrl} />}
+{imageUrl && <meta property="og:image" content={seoImageURL} />}
 
 <!-- Twitter -->
-<meta
-	property="twitter:card"
-	content={imageUrl ? "summary_large_image" : "summary"}
-/>
-<meta property="twitter:title" content={title} />
-<meta property="twitter:description" content={description} />
-{imageUrl && <meta property="twitter:image:src" content={imageUrl} />}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:creator" content={twitterAuthor} />
+<meta name="twitter:description" content={description} />
+{imageUrl && <meta property="twitter:image" content={seoImageURL} />}

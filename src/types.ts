@@ -9,7 +9,9 @@ interface IElement {
 type SiteMeta = {
 	title: string;
 	description?: string;
-	imageUrl?: string;
+	imageUrl?: string;	
+	twitterAuthor?: string;	
+	domain?: string;
 };
 
 type PaginationLink = {

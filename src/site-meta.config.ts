@@ -1,7 +1,9 @@
 const siteMeta = {
+  domain: "http://0.0.0.0:3000",
   title: "Kolv.in",
   description: "Personal site of an average engineer. I hate computers",
-  imageUrl: "/images/me/milos-at-the-door.jpeg",
+  twitterAuthor: "@k0lvin",
+  imageUrl: "/images/misc/example.jpg",
   lang: "en-GB",
   ogLocale: "en_GB",
   themeColorLight: "#fafafa",
