@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/kolvin/blog/compare/v1.3.1...v1.3.2) (2022-10-27)
+
+
+### Bug Fixes
+
+* set site base domain ([f09a3d3](https://github.com/kolvin/blog/commit/f09a3d340b8091764429289f114edc5d69ad260e))
+
 ## [1.3.1](https://github.com/kolvin/blog/compare/v1.3.0...v1.3.1) (2022-10-27)
 
 
