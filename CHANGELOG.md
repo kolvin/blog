@@ -1,3 +1,13 @@
+## [1.3.1](https://github.com/kolvin/blog/compare/v1.3.0...v1.3.1) (2022-10-27)
+
+
+### Bug Fixes
+
+* remove comman ([887b0cc](https://github.com/kolvin/blog/commit/887b0cc26f6d692fc44679349f2e82c0d835a325))
+* **seo:** cleanup robots text, add sitemap ([e7144bb](https://github.com/kolvin/blog/commit/e7144bbbdb8c7745533691c212782ae064af1104))
+* **seo:** remove common TwitterAuthor refs ([e09bd73](https://github.com/kolvin/blog/commit/e09bd7328c1022b45d1292f12bc49af31128ca19))
+* **seo:** working seo image urls ([2cd52af](https://github.com/kolvin/blog/commit/2cd52af74f8b9467394c74cea3ebdd5d74e53353))
+
 # [1.3.0](https://github.com/kolvin/blog/compare/v1.2.3...v1.3.0) (2022-10-22)
 
 
