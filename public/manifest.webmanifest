@@ -1,7 +1,7 @@
 {
-	"name": "Astro Theme Cactus Demo",
-	"short_name": "Astro_Cactus",
-	"description": "Starter blog site for Astro",
+	"name": "Kolv.in",
+	"short_name": "Kolv.in",
+	"description": "Personal site of an average engineer",
 	"icons": [
 		{
 			"src": "images/icon/192x192.png",

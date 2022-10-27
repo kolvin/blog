@@ -1,9 +1,4 @@
-# Disallow everything.
+Sitemap: https://kolv.in/sitemap-index.xml
+
 User-agent: *
-Disallow: /
-
-User-agent: Twitterbot
-Allow: /images
-
-User-agent: facebookexternalhit
-Allow: /images
+Allow: /

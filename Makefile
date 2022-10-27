@@ -14,6 +14,10 @@ build: ## Build src
 run: ## Run project
 	@pnpm dev
 
-ngrok-expose: ## Expose site publiclly via ngrok
+preview: ## Preview complied site 
 	@make -s build
+	@pnpm preview
+
+ngrok-expose: ## Expose complied site publiclly via ngrok
+	@make -s preview
 	@ngrok http 3000

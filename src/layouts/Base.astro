@@ -11,13 +11,18 @@ export type Props = {
 };
 
 const {
-	meta: { title, description, imageUrl },
+	meta: { title, description, imageUrl, twitterAuthor },
 } = Astro.props as Props;
 ---
 
 <html lang={siteMeta.lang}>
 	<head>
-		<BaseHead title={title} description={description} imageUrl={imageUrl} />
+		<BaseHead
+			title={title}
+			description={description}
+			imageUrl={imageUrl}
+			twitterAuthor={twitterAuthor}
+		/>
 		<script define:vars={{ siteMeta }}>
 			const root = document.documentElement;
 			const colorThemeMetaTag = document.querySelector(
