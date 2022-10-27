@@ -17,7 +17,7 @@ export default defineConfig({
       wrap: true
     }
   },
-  site: "http://0.0.0.0:3000",
+  site: "https://kolv.in",
   integrations: [mdx({}), tailwind({
     config: {
       applyBaseStyles: false

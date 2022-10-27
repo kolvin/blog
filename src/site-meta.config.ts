@@ -1,5 +1,5 @@
 const siteMeta = {
-  domain: "http://0.0.0.0:3000",
+  domain: "https://kolv.in",
   title: "Kolv.in",
   description: "Personal site of an average engineer. I hate computers",
   twitterAuthor: "@k0lvin",
