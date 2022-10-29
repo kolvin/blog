@@ -4,20 +4,20 @@ help:
 
 install: ## Install pre-commit hooks
 	@pre-commit install
+	@cd app; pnpm install
 
 uninstall: ## Uninstall hooks
 	@pre-commit uninstall
 
 build: ## Build src
-	@pnpm run build
+	@cd app; pnpm run build
 
-run: ## Run project
-	@pnpm dev
+run: ## Run dev project
+	@cd app; pnpm dev
 
 preview: ## Preview complied site 
 	@make -s build
-	@pnpm preview
+	@cd app; pnpm --silent preview
 
-ngrok-expose: ## Expose complied site publiclly via ngrok
-	@make -s preview
+expose-preview: ## Expose preview site publiclly via ngrok
 	@ngrok http 3000

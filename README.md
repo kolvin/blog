@@ -3,7 +3,8 @@
 ## Contents
 
 - [Blog](#blog)
-- [Links](#links)
+  - [Deployment](#deployment)
+  - [Links](#links)
   - [Notes](#notes)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -15,9 +16,15 @@ A repo for my personal blog build using [Astro](https://astro.build/)+[Tailwind]
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org) 
 [![Semantic Release - angular](https://img.shields.io/static/v1?label=Semantic+Release&message=angular&color=e10079&logo=semantic-release)](https://github.com/semantic-release/semantic-release) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-___
 
-# Links
+---
+
+## Deployment
+![Alt text](.docs/deployment.jpg?raw=true "deployment")
+
+---
+
+## Links
 
 - [kolv.in](https://kolv.in)
 - [analytics](https://plausible.io/kolv.in)

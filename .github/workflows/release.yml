@@ -5,8 +5,7 @@ on:
     branches:
       - main
     paths:
-      - src/**
-      - public/**
+      - app/**
 
 jobs:
   release:
