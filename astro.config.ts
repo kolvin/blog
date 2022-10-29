@@ -18,14 +18,14 @@ export default defineConfig({
     }
   },
   site: "https://kolv.in",
-  integrations: [mdx({}), tailwind({
-    config: {
-      applyBaseStyles: false
-    }
-  }), 
-  image(),
-  sitemap({
-    filter: (page) => page !== 'https://kolv.in/posts'
-  })
-]
+  integrations: [
+    mdx({}),
+    tailwind({
+      config: {
+        applyBaseStyles: false
+      }
+    }), 
+    image(),
+    sitemap()
+  ]
 });
