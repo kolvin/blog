@@ -6,7 +6,6 @@ import "../styles/global.css";
 export type Props = SiteMeta;
 
 const {
-	domain = siteMeta.domain,
 	title,
 	description = siteMeta.description,
 	imageUrl = siteMeta.imageUrl,
@@ -16,7 +15,7 @@ const {
 const titleSeparator = "•";
 const siteTitle = `${title} ${titleSeparator} ${siteMeta.title}`;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const seoImageURL = `${domain}${imageUrl}`;
+const seoImageURL = `${siteMeta.domain}${imageUrl}`;
 ---
 
 <meta charset="utf-8" />
