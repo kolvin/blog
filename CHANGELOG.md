@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/kolvin/blog/compare/v1.4.0...v1.4.1) (2022-11-09)
+
+
+### Bug Fixes
+
+* **seo:** use defaut seo image for cv page ([f5b977b](https://github.com/kolvin/blog/commit/f5b977bbc813de8df49431a0bdf9e81cd61b6379))
+
 # [1.4.0](https://github.com/kolvin/blog/compare/v1.3.4...v1.4.0) (2022-11-09)
 
 
