@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/kolvin/blog/compare/v1.3.4...v1.4.0) (2022-11-09)
+
+
+### Features
+
+* port engineering CV to markdown content. Add gitlab icon link to footer. add CV link to footer ([1ade597](https://github.com/kolvin/blog/commit/1ade597690b44a5ab01eba623d3f3a51f269452a))
+
 ## [1.3.4](https://github.com/kolvin/blog/compare/v1.3.3...v1.3.4) (2022-10-29)
 
 
